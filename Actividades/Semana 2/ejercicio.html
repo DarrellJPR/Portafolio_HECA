@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Flexbox - Menú</title>
+  <style>
+    .contenedor {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .caja {
+      width: 150px;
+      height: 150px;
+      background-color: #3931db;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .caja:hover {
+      transform: scale(1.05);
+      background-color: #1b99bc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <a href="caja1.html" class="caja">Caja 1: Texto</a>
+    <a href="caja2.html" class="caja">Caja 2: Foto</a>
+    <a href="caja3.html" class="caja">Caja 3: Ambos</a>
+  </div>
+
+</body>
+</html>

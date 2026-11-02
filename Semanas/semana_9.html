@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Metadatos-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio :: Semana 9</title>
+    <link rel="icon" href="/Portafolio_HECA/IMG/bookmark.png">
+    <link rel="stylesheet" href="/Portafolio_HECA/CSS/semanas.css">
+</head>
+
+<!--Cuerpo-->
+
+<body>
+
+    <!--Encabezado-->
+
+    <header>
+        <a href="/Portafolio_HECA/index.html">
+            <img src="/Portafolio_HECA/IMG/book.png">
+        </a>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <a href="/Portafolio_HECA/index.html">Inicio</a>
+            <a href="/Portafolio_HECA/sobre-mi.html">Sobre mi</a>
+            <a href="/Portafolio_HECA/mi-curso.html">Mi curso</a>
+        </nav>
+
+        <nav class="barra-regresar">
+            <a href="/Portafolio_HECA/mi-curso.html"> ← Volver a mi Curso</a>
+        </nav>
+    </header>
+
+    <!--Contenido Principal-->
+
+    <div class="contenido">
+
+        <!--Barra lateral-->
+
+        <aside class="barra-lateral">
+            <div class="menu-pc">
+                <h2>Contenido</h2>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-introduccion-tema">Introducción</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-tipos">Tipos de Animaciones</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-propiedades">Propiedades</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-aplicaciones">Aplicaciones</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-consideraciones">Consideraciones</a>
+                </nav>
+            </div>
+
+            <details class="menu-movil">
+                <summary>Contenido</summary>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-introduccion-tema">Introducción</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-tipos">Tipos de Animaciones</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-propiedades">Propiedades</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_9.html#semana-consideraciones">Consideraciones</a>
+                </nav>
+            </details>
+        </aside>
+
+        <!--Contenido Segundario-->
+
+        <main>
+
+            <!--Seccion: Titulo de la semana-->
+
+            <section id="semana-introduccion">
+                <div class="semana-introduccion-texto">
+                    <h2>Semana 9</h2>
+                    <h3>Animaciones web: introducción, tipos, propiedades y aplicaciones de las animaciones en las paginas web</h3>
+                </div>
+
+                <div class="semana-introduccion-imagen">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+                </div>
+            </section>
+
+            <!--Seccion: Logro de la sesion-->
+
+            <section id="semana-logro">
+                <h3>Logro de Aprendizaje:</h3>
+                <p>
+                    Al finalizar la sesión de aprendizaje el estudiante conoce sobre Animaciones
+                    web: introducción, tipos, propiedades y aplicaciones de las animaciones en
+                    las páginas web, para poder aplicarlos en los casos prácticos.
+                </p>
+            </section>
+
+            <!--Seccion: Introduccion a las animaciones-->
+
+            <section id="semana-introduccion-tema" class="semana-contexto">
+                <div class="semana-contexto-imagen">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+                </div>
+
+                <div class="semana-contexto-texto">
+                    <h3>Introducción a las Animaciones Web:</h3>
+                    <p>
+                        Las animaciones web son efectos visuales que permiten modificar
+                        progresivamente la apariencia o el comportamiento de los elementos
+                        de una página web a lo largo del tiempo.
+                    </p>
+                    <p>
+                        Mediante CSS y JavaScript se pueden crear movimientos, cambios de
+                        tamaño, rotaciones, desplazamientos, modificaciones de colores
+                        y efectos de aparición o desaparición.
+                    </p>
+                    <p>
+                        En CSS, las animaciones permiten establecer diferentes estados
+                        visuales de un elemento y controlar cómo cambia entre ellos.
+                        Esto ayuda a mejorar la presentación y proporciona información
+                        visual sobre las acciones que realiza el usuario.
+                    </p>
+                </div>
+            </section>
+
+            <!--Seccion: Tipos de animaciones-->
+
+            <section id="semana-tipos" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Tipos de Animaciones Web:</h3>
+
+                    <ul>
+                        <li><b>Transiciones CSS (Transition):</b></li>
+                        <p>
+                            Permiten realizar cambios graduales entre dos estados de un
+                            elemento cuando cambia alguna de sus propiedades CSS.
+                            Por ejemplo, al pasar el cursor sobre un botón, su color
+                            puede modificarse progresivamente.
+                        </p>
+
+                        <li><b>Animaciones CSS (@keyframes):</b></li>
+                        <p>
+                            Permiten definir una secuencia de cambios mediante fotogramas
+                            clave. Se pueden establecer diferentes estados utilizando
+                            porcentajes o las palabras from y to, controlando la duración
+                            y las repeticiones de la animación.
+                        </p>
+
+                        <li><b>Animaciones mediante JavaScript:</b></li>
+                        <p>
+                            Permiten crear y controlar animaciones mediante código
+                            JavaScript. Una de las herramientas disponibles es la
+                            Web Animations API, que permite reproducir, pausar,
+                            invertir y modificar la velocidad de las animaciones.
+                        </p>
+
+                        <li><b>Animaciones activadas por interacción:</b></li>
+                        <p>
+                            Son efectos que se producen como respuesta a las acciones
+                            del usuario, como pasar el cursor sobre un elemento,
+                            presionar un botón o interactuar con determinados
+                            componentes de la página.
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="semana-contexto-imagen">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                </div>
+            </section>
+
+            <!--Seccion: Propiedades-->
+
+            <section id="semana-propiedades" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Propiedades de las Animaciones CSS:</h3>
+
+                    <p>
+                        CSS dispone de diferentes propiedades para configurar el
+                        comportamiento de una animación. Entre las principales
+                        se encuentran:
+                    </p>
+
+                    <ul>
+                        <li><b>animation-name:</b></li>
+                        <p>
+                            Especifica el nombre de la animación que se desea utilizar,
+                            el cual debe coincidir con una regla @keyframes.
+                        </p>
+
+                        <li><b>animation-duration:</b></li>
+                        <p>
+                            Establece cuánto tiempo tarda en completarse un ciclo
+                            de la animación. Se expresa normalmente en segundos (s)
+                            o milisegundos (ms).
+                        </p>
+
+                        <li><b>animation-delay:</b></li>
+                        <p>
+                            Determina cuánto tiempo debe esperar la animación
+                            antes de comenzar.
+                        </p>
+
+                        <li><b>animation-iteration-count:</b></li>
+                        <p>
+                            Indica cuántas veces se repetirá la animación.
+                            Puede utilizar el valor infinite para repetirla
+                            continuamente.
+                        </p>
+
+                        <li><b>animation-direction:</b></li>
+                        <p>
+                            Define la dirección de reproducción, permitiendo
+                            que la animación avance normalmente, retroceda
+                            o alterne entre ambas direcciones.
+                        </p>
+
+                        <li><b>animation-timing-function:</b></li>
+                        <p>
+                            Controla la velocidad de cambio durante la animación.
+                            Algunos valores son ease, linear, ease-in y ease-out.
+                        </p>
+
+                        <li><b>animation-fill-mode:</b></li>
+                        <p>
+                            Establece cómo se aplican los estilos de la animación
+                            antes de comenzar o después de finalizar.
+                        </p>
+
+                        <li><b>animation-play-state:</b></li>
+                        <p>
+                            Permite establecer si una animación está ejecutándose
+                            o permanece pausada.
+                        </p>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Seccion: Fotogramas clave-->
+
+            <section id="semana-keyframes" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Fotogramas Clave (@keyframes):</h3>
+
+                    <p>
+                        La regla @keyframes permite establecer los diferentes
+                        momentos de una animación y definir los estilos que
+                        tendrá un elemento en cada uno de ellos.
+                    </p>
+
+                    <p>
+                        Se pueden utilizar los valores from y to para indicar
+                        el estado inicial y final, o porcentajes para establecer
+                        estados intermedios.
+                    </p>
+
+                    <p>
+                        Por ejemplo, una animación puede comenzar con un elemento
+                        ubicado en su posición original, desplazarse durante el
+                        proceso y finalizar en una posición diferente.
+                    </p>
+                </div>
+
+                <div class="semana-contexto-imagen">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+                </div>
+            </section>
+
+            <!--Seccion: Aplicaciones-->
+
+            <section id="semana-aplicaciones" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Aplicaciones de las Animaciones Web:</h3>
+
+                    <ul>
+                        <li><b>Interacción con botones:</b></li>
+                        <p>
+                            Permiten mostrar cambios visuales cuando el usuario
+                            pasa el cursor sobre un botón o realiza una acción,
+                            proporcionando una respuesta visual.
+                        </p>
+
+                        <li><b>Menús de navegación:</b></li>
+                        <p>
+                            Se utilizan para mostrar y ocultar opciones de menú
+                            mediante efectos de desplazamiento, aparición
+                            o cambios de apariencia.
+                        </p>
+
+                        <li><b>Presentación de contenido:</b></li>
+                        <p>
+                            Facilitan la aparición progresiva de imágenes,
+                            textos y otros elementos para organizar
+                            visualmente la información.
+                        </p>
+
+                        <li><b>Indicadores de carga:</b></li>
+                        <p>
+                            Permiten representar visualmente procesos que
+                            requieren tiempo, como la carga de información
+                            o la espera de una respuesta.
+                        </p>
+
+                        <li><b>Realce de elementos:</b></li>
+                        <p>
+                            Ayudan a destacar determinados componentes de
+                            una página, como notificaciones, mensajes
+                            importantes o elementos interactivos.
+                        </p>
+
+                        <li><b>Experiencia de usuario:</b></li>
+                        <p>
+                            Pueden facilitar la comprensión de las interacciones
+                            y hacer que la navegación resulte más clara,
+                            siempre que se utilicen de manera moderada.
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="semana-contexto-imagen">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+                </div>
+            </section>
+
+            <!--Seccion: Consideraciones-->
+
+            <section id="semana-consideraciones" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Consideraciones al utilizar Animaciones:</h3>
+
+                    <ul>
+                        <li><b>Rendimiento:</b></li>
+                        <p>
+                            Es importante evitar animaciones innecesariamente
+                            complejas que puedan afectar la fluidez de la página.
+                        </p>
+
+                        <li><b>Accesibilidad:</b></li>
+                        <p>
+                            Se debe considerar a las personas que prefieren
+                            reducir el movimiento en pantalla. CSS dispone de
+                            la consulta prefers-reduced-motion para adaptar
+                            las animaciones a esta preferencia.
+                        </p>
+
+                        <li><b>Duración:</b></li>
+                        <p>
+                            Los efectos deben tener una duración apropiada
+                            para que el usuario pueda percibirlos sin
+                            retrasar innecesariamente la interacción.
+                        </p>
+
+                        <li><b>Uso moderado:</b></li>
+                        <p>
+                            Las animaciones deben tener un propósito dentro
+                            de la página y no distraer al usuario del
+                            contenido principal.
+                        </p>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!--Pie de Pagina-->
+
+    <footer>
+        <p>Mi portafolio - 2026</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
