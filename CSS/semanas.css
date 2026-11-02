@@ -1,0 +1,427 @@
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* ENCABEZAMIENTO */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 160, 189, 0.67);
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+
+/* NAVEGACION DEL ENCABEZAMIENTO */
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    background-color: rgb(30, 75, 130);
+}
+
+
+/* CONTENIDO*/
+.contenido {
+    display: flex;
+    align-items: stretch;
+}
+
+/* BARRA DE REGRESAR */
+
+.barra-regresar {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 -30px;
+}
+
+/* BARRA LATERAL */
+
+.menu-movil {
+    display: none;
+}
+
+.barra-lateral {
+    width: 220px;
+    min-height: 100vh;
+    background-color: rgb(20, 156, 180);
+    padding: 25px 15px;
+    flex-shrink: 0;
+}
+
+.barra-lateral h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.barra-lateral nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.barra-lateral nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.barra-lateral nav a:hover {
+    background-color: rgb(30, 75, 130);
+}
+
+
+/* CONTENIDO PRINCIPAL */
+main {
+    flex: 1;
+    padding: 30px;
+    width: auto;
+    max-width: none;
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+
+/* SECCIONES */
+
+
+/* SECTION INTRODUCCION */
+#semana-introduccion {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.semana-introduccion-texto {
+    flex: 1;
+}
+
+.semana-introduccion-texto h3 {
+    font-weight: normal;
+}
+
+.semana-introduccion-imagen {
+    flex: 1;
+}
+
+.semana-introduccion-imagen img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+/* LOGRO DE APRENDIZAJE */
+#semana-logro {
+    text-align: justify;
+}
+
+
+/* CONTEXTO */
+.semana-contexto {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.semana-contexto-contenido {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.semana-contexto-texto {
+    flex: 1;
+    text-align: justify;
+}
+
+.semana-contexto-texto ul {
+    padding-left: 20px;
+}
+
+.semana-contexto-texto li {
+    margin: 15px;
+}
+
+.semana-contexto-imagen {
+    flex: 1;
+}
+
+.semana-contexto-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+/* ACTIVIDAD */
+#semana-actividad h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#semana-actividad img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#semana-actividad ul {
+    display: flex;
+    margin: 4%;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+#semana-actividad li {
+    margin-bottom: 8px;
+}
+
+#semana-actividad li a {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 160, 189, 0.67);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+#semana-actividad li a:not(.imagen) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 160, 189, 0.67);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#semana-actividad li a p {
+    margin-bottom: 10px;
+}
+
+#semana-actividad li a img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+#semana-actividad li a:hover {
+    background-color: rgb(30, 75, 130);
+    transform: translateY(-5px);
+}
+
+
+/* PIE DE PAGINA */
+footer {
+    background-color: rgb(30, 75, 130);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-pc {
+        display: none;
+    }
+
+    .menu-movil {
+        display: block;
+        width: 100%;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .menu-movil summary {
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    .menu-movil nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-movil nav a {
+        padding: 12px 15px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .contenido {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #semana-introduccion {
+        flex-direction: column;
+    }
+
+    .semana-introduccion-imagen {
+        width: 100%;
+    }
+
+    .semana-introduccion-imagen img {
+        height: 200px;
+    }
+
+    .semana-contexto {
+        flex-direction: column;
+    }
+
+    .semana-contexto-imagen {
+        width: 100%;
+    }
+
+    .semana-contexto-imagen img {
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .barra-lateral {
+        width: 100%;
+    }
+
+    .menu-movil {
+        width: 100%;
+    }
+
+    .menu-movil summary {
+        padding: 15px;
+    }
+
+    .menu-movil nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-movil nav a {
+        padding: 12px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        gap: 0;
+    }
+
+    header nav a {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .contenido {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #semana-actividad li a {
+        width: 100%;
+        max-width: 300px;
+    }
+}

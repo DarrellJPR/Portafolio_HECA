@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Metadatos-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio :: Semana 3</title>
+    <link rel="icon" href="/Portafolio_HECA/IMG/bookmark.png">
+    <link rel="stylesheet" href="/Portafolio_HECA/CSS/semanas.css">
+</head>
+
+<!--Cuerpo-->
+
+<body>
+
+    <!--Encabezado-->
+
+    <header>
+        <a href="/Portafolio_HECA/index.html">
+            <img src="/Portafolio_HECA/IMG/book.png">
+        </a>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <a href="/Portafolio_HECA/index.html">Inicio</a>
+            <a href="/Portafolio_HECA/sobre-mi.html">Sobre mi</a>
+            <a href="/Portafolio_HECA/mi-curso.html">Mi curso</a>            
+        </nav>
+
+        <nav class="barra-regresar">
+            <a href="/Portafolio_HECA/mi-curso.html"> ← Volver a mi Curso</a>
+        </nav>
+    </header>
+
+    <!--Contenido Principal-->
+
+    <div class="contenido">
+        <aside class="barra-lateral">
+            <div class="menu-pc">
+                <h2>Contenido</h2>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-gridlayout">Grid Layout</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-caracteristicas">Caracteristicas</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-propiedades">Propiedades</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-actividadP">Actividad Practica</a>
+                </nav>
+            </div>
+            
+            <details class="menu-movil">
+                <summary>Contenido</summary>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-gridlayout">Grid Layout</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-caracteristicas">Caracteristicas</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-propiedades">Propiedades</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_3.html#semana-actividadP">Actividad Practica</a>
+                </nav>
+            </details>
+        </aside>
+
+        <main>
+            <section id="semana-introduccion">
+                <div class="semana-introduccion-texto">
+                    <h2>Semana 3</h2>
+                    <h3>Grid Layout, conceptos y frameworks de Front, Row y Column</h3>
+                </div>
+
+                <div class="semana-introduccion-imagen">
+                    <img src="/Portafolio_HECA/IMG/grid-layout.png">
+                </div>
+            </section>
+
+            <section id="semana-logro">
+                <h3>Logro de Aprendizaje:</h3>
+                <p>
+                    Al finalizar la sesión de aprednizaje el estudiante conoce Grid Layout, conceptos y
+                    frameworks de Front, Row y Column para poder aplicarlos en los casos prácticos.
+                </p>
+            </section>
+
+            <section id="semana-gridlayout" class="semana-contexto">
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/80-grid-layouts.jpg">
+                </div>
+                <div class="semana-contexto-texto">
+                    <h3>Grid Layout:</h3>
+                    <p>
+                        CSS Grid Layout es un sistema de CSS que se utiliza para crear una disposición ordenada 
+                        de elementos en una página web. CSS Grid Layout es una de las herramientas más poderosas
+                        para lograr esto. Permite a los diseñadores y desarrolladores definir áreas en una cuadrícula 
+                        y colocar elementos en esas áreas, facilitando un diseño más flexible y responsivo.
+                    </p>
+                </div>
+            </section>
+
+            <section id="semana-caracteristicas" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Caracteristicas:</h3>
+                    <ul>
+                        <li><b>Diseño bidimensional:</b></li>
+                        <p>
+                            Maneja dos ejes a la vez (horizontal y vertical), a diferencia de Flexbox que funciona en una sola dimensión.
+                        </p>
+                        
+                        <li><b>Control de pistas:</b></li>
+                        <p>
+                            Permite definir el tamaño y la cantidad de filas y columnas.
+                        </p>
+                        <li><b>Espaciado nativo:</b></li>
+                        <p>
+                            Añade separación entre filas y columnas de manera limpia sin necesidad de manipular márgenes manualmente.
+                        </p>
+                        <li><b>Posicionamiento por líneas y áreas:</b></li>
+                        <p>
+                            Los elementos pueden ubicarse mediante líneas de referencia o agruparse en áreas nombradas para 
+                            estructurar la página completa.
+                        </p>
+                        <li><b>Adaptabilidad:</b></li>
+                        <p>
+                            Permite reordenar o cambiar la estructura de la cuadrícula según el tamaño de la pantalla sin modificar 
+                            el código HTML.
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/grid-con-exam-css.jpg">
+                </div>
+            </section>
+
+            <section id="semana-propiedades" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Propiedades del contenedor Grid:</h3>
+                    <ul>
+                        <li><b>display: grid</b> - Convierte un elemento en un contenedor Grid.</li>
+                        <li><b>grid-template-columns</b> - Define las columnas.</li>
+                        <li><b>grid-template-rows</b> - define las filas.</li>
+                        <li><b>grid-template-areas</b> - Permite crear áreas con nombres.</li>
+                        <li><b>gap</b> - Establece el espacio entre filas y columnas.</li>
+                        <li><b>column-gap</b> - Establece el espacio entre columnas.</li>
+                        <li><b>row-gap</b> - Establece el espacio entre filas.</li>
+                        <li><b>justify-items</b> - Alinea los elementos horizontalmente dentro de sus celdas.</li>
+                        <li><b>align-items</b> - Alinea los elementos verticalmente dentro de sus celdas.</li>
+                        <li><b>justify-content</b> - Distribuye la cuadrícula horizontalmente dentro del contenedor.</li>
+                        <li><b>align-content</b> - Distribuye la cuadrícula verticalmente dentro del contenedor.</li>
+                    </ul>
+
+                    <h3><br>Propiedades de los elementos Grid:</h3>
+                    <ul>
+                        <li><b>grid-column</b> - Indica en qué columnas se ubicará un elemento.</li>
+                        <li><b>grid-row</b> - Indica en qué columnas se ubicará un elemento.</li>
+                        <li><b>grid-area</b> - Permite colocar un elemento en un área determinada.</li>
+                        <li><b>justify-self</b> - Alinea individualmente un elemento horizontalmente.</li>
+                        <li><b>align-self</b> - Alinea individualmente un elemento verticalmente.</li>
+                    </ul>
+                </div>
+
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/grid.jpg">
+                </div>
+            </section>
+
+            <section id="semana-actividadP" class="semana-contexto">
+                <div class="semana-contexto-contenido">
+                    <div class="semana-contexto-texto">
+                        <h3>Actividad Practica:</h3>
+                        <p>
+                            Crear una pagina web sobre "Grid Layout"
+                        </p>
+                    </div>
+                    
+                    <div class="semana-contexto-imagen">
+                        <img src="/Portafolio_HECA/IMG/Actividad 3.png">
+                    </div>
+                </div>
+            </section>
+
+            <section id="semana-actividad">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="/Portafolio_HECA/Actividades/Semana 3/INDEX.html" target="_blank"><b>Ver actividad</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Mi portafolio - 2026</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

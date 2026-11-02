@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Metadatos-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio :: Semana 2</title>
+    <link rel="icon" href="/Portafolio_HECA/IMG/bookmark.png">
+    <link rel="stylesheet" href="/Portafolio_HECA/CSS/semanas.css">
+</head>
+
+<!--Cuerpo-->
+
+<body>
+
+    <!--Encabezado-->
+
+    <header>
+        <a href="/Portafolio_HECA/index.html">
+            <img src="/Portafolio_HECA/IMG/book.png">
+        </a>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <a href="/Portafolio_HECA/index.html">Inicio</a>
+            <a href="/Portafolio_HECA/sobre-mi.html">Sobre mi</a>
+            <a href="/Portafolio_HECA/mi-curso.html">Mi curso</a>            
+        </nav>
+
+        <nav class="barra-regresar">
+            <a href="/Portafolio_HECA/mi-curso.html"> ← Volver a mi Curso</a>
+        </nav>
+    </header>
+
+    <!--Contenido Principal-->
+
+    <div class="contenido">
+        <aside class="barra-lateral">
+            <div class="menu-pc">
+                <h2>Contenido</h2>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-flexbox">Flexbox</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-contenedor">Contenedores Flexbox</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-Dirección">Dirección del contenido</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-alineacion">Alineación y justificación</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-flexibilidad">Flexibilidad de los elementos</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-actividadP">Actividad Practica</a>
+                </nav>
+            </div>
+            
+            <details class="menu-movil">
+                <summary>Contenido</summary>
+                <nav>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-logro">Logro de Aprendizaje</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-flexbox">Flexbox</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-contenedor">Contenedores Flexbox</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-Dirección">Dirección del contenido</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-alineacion">Alineación y justificación</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-flexibilidad">Flexibilidad de los elementos</a>
+                    <a href="/Portafolio_HECA/Semanas/semana_2.html#semana-actividadP">Actividad Practica</a>
+                </nav>
+            </details>
+        </aside>
+
+        <main>
+            <section id="semana-introduccion">
+                <div class="semana-introduccion-texto">
+                    <h2>Semana 2</h2>
+                    <h3>Flexbox: Concepto, Contenedores, Elementos de las Paginas Web con Diseño Responsivo</h3>
+                </div>
+
+                <div class="semana-introduccion-imagen">
+                    <img src="/Portafolio_HECA/IMG/flexbox.png">
+                </div>
+            </section>
+
+            <section id="semana-logro">
+                <h3>Logro de Aprendizaje:</h3>
+                <p>
+                    Al final de la sesión, el estudiante conoce sobre Flexbox: concepto, contenedores, elementos 
+                    de las paginas Web con diseño responsivo, teniendo en cuenta sus principios y normativas y poder 
+                    aplicarlo en su carrera.
+                </p>
+            </section>
+
+            <section id="semana-flexbox" class="semana-contexto">
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/flexbox-2.png">
+                </div>
+                <div class="semana-contexto-texto">
+                    <h3>Flexbox:</h3>
+                    <p>
+                        Flexbox o tambien conocido como Flexible Box Layout es un modelo de diseño de CSS que sirve 
+                        para organizar elementos en filas o columnas de forma flexible y adaptable.<br><br>
+                        Esto permitira conpaginar diversos elementos de una pagina de forma unidimensional.
+                    </p>
+                </div>
+            </section>
+
+            <section id="semana-contenedor" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Contenedores Flexbox:</h3>
+                    <p>
+                        Un contenedor Flexbox permite organizar los elementos que están dentro de él de manera flexible, 
+                        pudiendo controlar su dirección, posición, alineación y distribución del espacio.
+                    </p>
+                    <ul>
+                        <li><b>display: flex;</b></li>
+                    </ul>
+                </div>
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/contenedor.png">
+                </div>
+            </section>
+
+            <section id="semana-Dirección" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Dirección del contenido:</h3>
+                    <p>
+                        Determina en qué dirección se colocan los elementos dentro del contenedor:<br><br>
+                    </p>
+                    <ul>
+                        <li><b>row:</b> Elementos de izquierda a derecha.</li>
+                        <li><b>row-reverse:</b> Elementos de derecha a izquierda.</li>
+                        <li><b>column:</b> Elementos de arriba hacia abajo.</li>
+                        <li><b>column-reverse:</b> Elementos de abajo hacia arriba.</li>
+                    </ul>
+
+                </div>
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/flex-direction.png">
+                </div>
+            </section>
+
+            <section id="semana-alineacion" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Alineación y justificación:</h3>
+                    <p>
+                        Permite controlar dónde se ubican los elementos dentro del contenedor, 
+                        tanto en el eje principal como en el eje secundario.
+                    </p>
+
+                    <ul>
+                        <li><b>justify-content:</b> Distribuye los elementos en el eje principal.</li>
+                        <li><b>align-items:</b> Alinea los elementos en el eje secundario.</li>
+                    </ul>
+                </div>
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/alineacion.webp">
+                </div>
+            </section>
+
+            <section id="semana-flexibilidad" class="semana-contexto">
+                <div class="semana-contexto-texto">
+                    <h3>Flexibilidad de los elementos:</h3>
+                    <p>
+                        Permite que los elementos se adapten al espacio disponible dentro del contenedor asignado.
+                    </p>
+
+                    <ul>
+                        <li><b>flex: 1;</b></li>
+                    </ul>
+                </div>
+                <div class="semana-contexto-imagen">
+                    <img src="/Portafolio_HECA/IMG/flexibilidad.png">
+                </div>
+            </section>
+
+            <section id="semana-actividadP" class="semana-contexto">
+                <div class="semana-contexto-contenido">
+                    <div class="semana-contexto-texto">
+                        <h3>Actividad Practica:</h3>
+                        <p>
+                            ¿Que hay en las tres cajas?
+                        </p>
+                    </div>
+                    
+                    <div class="semana-contexto-imagen">
+                        <img src="/Portafolio_HECA/IMG/Actividad 2.png">
+                    </div>
+                </div>
+            </section>
+
+            <section id="semana-actividad">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="/Portafolio_HECA/Actividades/Semana 2/ejercicio.html" target="_blank"><b>Ver actividad</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Mi portafolio - 2026</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

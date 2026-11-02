@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid con Poemas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 60px 1fr 40px;
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #2b59d8;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    aside a {
+      display: block;
+      margin-bottom: 10px;
+      color: #0066cc;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>Grid Layout</header>
+    <aside>
+      <h3>Selecciona un Tema</h3>
+      <a onclick="mostrarTema(1)">Tema 1 - ¿Que es?</a>
+      <a onclick="mostrarTema(2)">Tema 2 - Caracteristicas</a>
+    </aside>
+    <main id="contenidoPrincipal">
+      <h2>Bienvenido</h2>
+      <p>Haz clic en un tema desde la barra lateral para verlo aquí.</p>
+    </main>
+    <footer>
+        <p>Pie de pagina</p>
+    </footer>
+  </div>
+
+  <script>
+    function mostrarTema(numero) {
+      const main = document.getElementById("contenidoPrincipal");
+      if (numero === 1) {
+        main.innerHTML = `
+          <h2>¿Que es Grid Layout?</h2>
+          <p>
+            Es una tecnica de diseño utilizada para<br>
+            organizar elementos en una estructura de<br>
+            cuadricula o rejilla. Esta tecnica es común<br>
+            tanto en el diseño grafico como en el <br>
+            desarrollo web.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/edEG0CoM5gw?si=eEDYldClzDnGqTcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        `;
+      } else if (numero === 2) {
+        main.innerHTML = `
+          <h2>Caracteristicas</h2>
+          <p>
+            ■ Diseño bidimensional.<br>
+            ■ Unidad de fraccion.<br>
+            ■ Espaciado integrado.<br>
+            ■ Control de alineacion.<br>
+            ■ Superposicion de elementos.
+          </p>
+          <img src="imagen-2.png" height="300px" width="400px">
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
